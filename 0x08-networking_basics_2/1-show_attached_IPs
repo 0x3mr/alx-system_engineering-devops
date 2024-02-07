@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# show ips
+ip -o -4 addr show | awk '$3 == "inet" {print $4}' | cut -d'/' -f1 | tac
