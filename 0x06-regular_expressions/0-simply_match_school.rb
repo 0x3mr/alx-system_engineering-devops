@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-p ARGB[0].match?("School")
+p ARGV[0].scan(/School/).join
