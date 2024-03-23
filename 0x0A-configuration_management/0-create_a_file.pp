@@ -1,9 +1,8 @@
 # create a file with certain properties
-file { '/tmp/codingschool':
-  ensure  => file,
-  path    => '/tmp/codingschool',
-  mode    => '0744',
-  owner   => 'www-data',
-  group   => 'www-data',
-  content => 'I love Puppet'
+file { '/tmp/school':
+    ensure  => present,
+    content => 'I love Puppet',
+    owner   => 'www-data',
+    group   => 'www-data',
+    mode    => '0744',
 }
